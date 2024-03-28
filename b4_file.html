@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+
+    <style>
+        a:hover{
+            background: dimgrey;
+        }
+    </style>
+
+  </head>
+<body>
+	<!-- START OF NAV -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+
+					<li><a class="dropdown-item" href="#">Something</a></li>
+
+					<li><a class="dropdown-item" href="#">Nothing</a></li>
+				</ul>
+			</li>
+			<a href="#" class="nav-link position-relative">Events <span class="badge bg-danger rounded-pill position-absolute top-0 start-50 translate-middle">999+</span></a>
+			</li>
+			<li class="nav-item"> 
+				<a href="#" class="nav-link">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Login</a>
+			</li>
+		</ul>
+		</div>
+	</nav>
+	<!-- END OF NAV -->
+
+	<!-- BANNER -->
+	<div class="container-fluid" style="height: 50vh;">
+
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/blue1.jpg" alt="win" class="d-block w-100" style="height: 450px;">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/blue2.jpg" alt="win" class="d-block w-100" style="height: 450px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/blue3.jpg" alt="win" class="d-block w-100" style="height: 450px;">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon">
+
+                    </span>
+                </button>
+    
+                <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon">
+
+                    </span>
+                </button>
+                <div id="indicators">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#indicators" data-bs-slide-to="0" class="active bg-light"></button>
+                        <button data-bs-target="#indicators" data-bs-slide-to="1" class="bg-light"></button>
+                        <button data-bs-target="#indicators" data-bs-slide-to="2" class="bg-light"></button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+	</div>
+	<!-- END OF BANNER -->
+
+	<!-- breadcrumb -->
+	<nav>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="#">Home</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Events</a>
+			</li>
+			<li class="breadcrumb-item">
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- end of breadcrumb -->
+
+	<!-- Tab pane -->
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#acer">Acer</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#macbook">Macbook</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#dell">Dell</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="acer">
+				<img src="img/blue1.jpg">
+			</div>
+			<div class="tab-pane" id="macbook">
+				<img src="img/blue2.jpg">
+			</div>
+			<div class="tab-pane" id="dell">
+				<img src="img/blue3.jpg">
+			</div>
+		</div>
+	</div>
+	<!-- end of tab pane -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

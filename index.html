@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        a:hover{
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar = list of links -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="mynavbar">
+            <ul class="navbar-nav">
+                <!-- flex-column for vertical -->
+            <div class="dropdown">
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn dropdown-toggle" data-bs-toggle="dropdown"> Home</a>
+                    
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#" class="nav-link">This 60/40</a>
+                    </li>
+        
+                    <li class="dropdown-item">
+                        <a href="#" class="nav-link">Isn't</a>
+                    </li>
+        
+                    <li class="dropdown-item">
+                        <a href="#" class="nav-link">working</a>
+                    </li>
+                </ul>
+                </li>
+            </div>
+                <li class="nav-item">
+                    <a href="#" class="nav-link position-relative">Events <span class="badge bg-danger position-absolute top-0 start-50 translate-middle">8554448888+</span></a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FAQ</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-target="#modalbox" data-bs-toggle="modal">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-target="#modalboxtwo" data-bs-toggle="modal">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end of  navbar -->
+
+    <!-- banner -->
+
+    <div class="container-fluid bg-info" style="height: 50vh;">
+
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./Img/8-2.jpg" alt="win" class="d-block w-100" style="height: 350px;">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/green.jpg" alt="win" class="d-block w-100" style="height: 350px;">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon">
+
+                    </span>
+                </button>
+    
+                <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon">
+
+                    </span>
+                </button>
+
+                <div id="indicators">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#indicators" data-bs-slide-to="0" class="active bg-danger"></button>
+                        <button data-bs-target="#indicators" data-bs-slide-to="1" class="bg-warning"></button>
+                        <button data-bs-target="#indicators" data-bs-slide-to="2" class="bg-info"></button>
+                        <button data-bs-target="#indicators" data-bs-slide-to="3" class="bg-success"></button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- end of banner -->
+
+    <!-- breadcrumb -->
+
+        <nav style="--bs-breadcrumb-divider: '>';">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Tyler</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">The</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Creator</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+           <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#man">Man utd</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#barca">Barcelona</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#nig">Arsenal</a>
+            </li>
+           </ul> 
+
+           <div class="tab-content">
+                <div class="tab-pane" id="man">
+                    <img src="./Img/1316e9e0c1ba71705d17b9163b8bba93-scaled.jpg" alt="old-trafford" width="500px" height="300px">
+                </div>
+
+                <div class="tab-pane" id="barca">
+                    <img src="/Img/Camp-Nou-3.jpg" alt="camp-nou"width="500px" height="300px">
+                </div>
+                
+                <div class="tab-pane" id="nig">
+                    <img src="Img/arsenal-emirates-stadium-tour-22130453.jpg" alt="emirates" width="500px" height="300px">
+                </div>
+
+           </div>
+        </div>
+
+        <div class="row my-4">
+        <div class="input-group mb-3">
+
+            <label class="input-group-text col-md-1">Username</label>
+            <input type="text" name="Username" class="col-md-4" placeholder="Username">
+
+        </div>
+
+        <div class="input-group mb-3">
+
+            <label class="input-group-text col-md-1">Email</label>
+            <input type="text / email" name="email" class="col-md-4" placeholder="Email">
+
+        </div>
+
+        <div class="input-group mb-3">
+
+            <label class="input-group-text col-md-1">Password</label>
+            <input type="password" name="password" class="col-md-4" placeholder="Password">
+
+            
+        </div>
+
+        <button type="submit" class="col-md-3 btn btn-warning">Login</button>
+        </div>
+
+        <div class="modal" id="modalbox">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Sign Up</h1>
+                        <button class="bth-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="input-group">
+                                <label class="input-group-text">Email</label>
+                                <input type="email" name="Email" class="form-control">
+                            </div>
+
+                            <label class="form-label">Password</label>
+                            <input type="password" name="Password" class="form-control">
+                            
+                            <br>
+
+                            <input type="submit" name="login" value="Log In">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalboxtwo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Sign Up</h1>
+                        <button class="bth-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <label class="form-label">Username</label>
+                            <input type="text" name="Username" class="form-control">
+                            
+                            <br>
+
+
+                            <label class="form-label">Email</label>
+                            <input type="email" name="Email" class="form-control">
+
+                            <br>
+
+                            <div class="input-group">
+                                <label class="input-group-text">Password</label>
+                                <input type="password" name="Password" class="form-control">
+                            </div>
+                        </form>
+                            <br>
+                        <div class="input-group">
+                            <label class="input-group-text">Confirm Password</label>
+                            <input type="password" name="Password" class="form-control">
+                        </div>
+
+                            <br>
+                        <h3>Gender</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" >
+                                  Male
+                                </label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" >
+                                  Female
+                                </label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label" >
+                                  Walmart Bag
+                                </label>
+
+                            </div>
+
+                        <br>
+
+                        <input type="submit" name="login" value="Log In">
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
